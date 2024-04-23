@@ -1,1 +1,1 @@
-This is mi little project that i building to my university 
+This is my little project that i building to my university 
