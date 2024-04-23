@@ -1,0 +1,10 @@
+.container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+body{
+    background-color: aqua;
+    color: black;
+}

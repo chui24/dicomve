@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DicoMVE</title>
+
+    <!--Boostrap instalado - no necesita internet  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+    <!-- Aqui le empiezo a juntar el etilo que se creo en css, pilas con la sintaxis del href-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home_view.css') }}"> 
+</head>
+
+<body>
+
+  <!-- header -->
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="nav_logo">DicoMVE</a>
+  
+      <ul class="nav_items">
+        <li class="nav_item">
+          <a href="#" class="nav_link">Home</a> 
+          <a href="#" class="nav_link">About</a>
+          <a href="#" class="nav_link">Services</a>
+          <a href="#" class="nav_link">Contact us</a>
+        </li>
+      </ul>
+  
+      <button class="button">Login</button>
+      <button class="button">Sing Up</button>
+    </nav>
+  </header>
+
+  <!--Home-->
+  <section class="home"></section>
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+/* Giving styles to header */
+a{
+    text-decoration: none;
+}
+
+.header {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    color: ;
+    z-index: 100;
+    padding: 0 20px;
+
+}
+.nav{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav,
+.nav_item{
+    display: flex;
+    height: 100%;           /* Dando la altura en la que iran los botones en la cabezera */
+    align-items: center;    /* centrando los botones de l a cabezera*/
+    justify-content: space-between;
+}
+
+.nav_logo,
+.nav_link,
+.button {
+    color: #fff;
+
+}
+
+.nav_logo{
+    font-size: 25px;
+}
+
+.nav_item{
+    column-gap: 25px;
+}
+
+
+
+.nav_link:hover{
+    color: rgb(16, 219, 202); /*Aquí le doy el estilo de cambiar de color al momento de colocar el cursor encima de un link*/
+}
+
+/*  Giving styles to Home*/
+
+.home{
+    position: relative;
+    height: 100vh;
+    background-image:url('/static/img/neon.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
