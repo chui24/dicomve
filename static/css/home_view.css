@@ -7,7 +7,6 @@ a{
     position: fixed;
     height: 80px;
     width: 100%;
-    color: ;
     z-index: 100;
     padding: 0 20px;
 
@@ -22,39 +21,124 @@ a{
 .nav_item{
     display: flex;
     height: 100%;           /* Dando la altura en la que iran los botones en la cabezera */
-    align-items: center;    /* centrando los botones de l a cabezera*/
+    align-items: center;    /* centrando los botones de la cabezera*/
     justify-content: space-between;
 }
 
 .nav_logo,
 .nav_link,
 .button {
-    color: #fff;
+    color: rgb(0, 0, 0); /*Dando el color a las letras de la cabezera*/
 
 }
 
 .nav_logo{
-    font-size: 25px;
+    font-size: 50px; /*Dando el tamaño del logo de la pagina (palabra DicoMVE)*/
 }
 
 .nav_item{
-    column-gap: 25px;
+    column-gap: 80px; /*Dando el espacio entre los itmes como home, abaout....*/
 }
-
-
 
 .nav_link:hover{
     color: rgb(16, 219, 202); /*Aquí le doy el estilo de cambiar de color al momento de colocar el cursor encima de un link*/
 }
 
-/*  Giving styles to Home*/
+.button{
+    padding: 2px 20px; /*Ajustando el ancho y largo de los botones de login y Sing In*/
+    border: 2px solid rgb(22, 211, 195); /*Ajustando el borde y color de los botones*/
+    background: transparent;
+    border-radius: 20px; /*Ajustando el radio de los botones si quiero que se vean mas redondos y no cuadrados*/
+    cursor: pointer;
+}
 
+.button:active {
+    transform: scale(0.20) ; /*Dando estilo de parpadeo a los botones*/
+
+}
+
+/* Giving styles to Home*/
 .home{
     position: relative;
     height: 100vh;
-    background-image:url('/static/img/neon.jpg');
+    background-image:url('/static/img/neon.jpg'); /*Dando la imagen de fondo a la pagina */
     background-size: cover;
     background-position: center;
 }
 
+/*Posicionando el login*/
 
+.form_container{
+    position: absolute;
+    top: 50%;
+    left: 90%; /*Aqui coloco el texto o el container a la izquierda de acuerdo al porcentaje*/
+    transform: translate(-50%,-50%);
+    z-index: 101;
+    color: rgb(0, 0, 0);
+}
+
+
+.nav_logo img {
+    width: 300px; /* Ajusta el ancho del logo */
+    height: auto; /* Para mantener la proporción */
+}
+
+.nav_logo{
+    float: left; /* Coloca el logo a la izquierda */
+    margin-right: 20px; /* Añade un espacio entre el logo y los enlaces */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el contenedor en donde estara el mensaje de bienvenida y la descripcion */
+
+
+.content_container {
+    position: absolute;
+    right: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    border: 2px solid #fff; /* Añade un borde blanco de 2px alrededor del contenedor */
+    border-radius: 20px; /* Añade esquinas redondeadas al contenedor */
+    padding: 20px; /* Añade un espacio interno de 20px alrededor del contenido */
+    background-color: rgba(22, 247, 235, 0.925); /* Agrega un fondo blanco transparente al contenedor */
+    box-shadow: 0 4px 6px rgba(22, 6, 6, 0.1); /* Agrega una sombra suave al contenedor */
+}
+
+/* Estilos para el título "Bienvenido a DicoMVE" */
+.welcome_title {
+    text-align: center;
+}
+
+.welcome_title h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Estilos para la sección de mensaje o descripción */
+.description {
+    text-align: center;
+    margin-top: 20px; /* Ajusta según sea necesario */
+}
+
+.description p {
+    font-size: 18px;
+    line-height: 1.5;
+}
