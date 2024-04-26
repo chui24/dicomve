@@ -19,7 +19,7 @@
     <nav class="nav">
       <!-- Logo -->
       <a href="#" class="nav_logo">
-        <img src="{{ url_for('static', filename='img/dicomve-logo-sin-fondo.png') }}" alt="DicoMVE Logo">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="DicoMVE Logo">
       </a>
   
       <!-- Lista de enlaces -->
@@ -41,7 +41,8 @@
     <div class="content_container">
       <!-- Título "Bienvenido a DicoMVE" -->
       <div class="welcome_title">
-        <h1>Welcome </h1>
+        <h1>Welcome Doctor</h1>
+        <p>This is a basic userfull imaging services for medical tools</p>
       </div>
 
       <!-- Sección de mensaje o descripción -->
@@ -52,11 +53,21 @@
 
     <!-- Formulario de login -->
     <div class="form_container">
-      <i class="ui uil-times"></i>
+      <i class="ui uil-times form_close"></i>
       <!--Forma del Login-->
       <div class="form login_form">
         <form action="#">
           <h2>Login</h2>
+          
+          <div class="input_box"></div>
+          <input type="email" placeholder="Enter your email">
+          <i class="uil uil-envelope-alt email"></i>
+        </form>
+      </div>
+      <div class="input_box"></div>
+          <input type="password" placeholder="Enter your password">
+          <i class="uil uil-lock password"></i>
+          <i class="uil uil-eye-slash pw_hide"></i>
         </form>
       </div>
     </div>

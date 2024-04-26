@@ -61,20 +61,58 @@ a{
 .home{
     position: relative;
     height: 100vh;
-    background-image:url('/static/img/neon.jpg'); /*Dando la imagen de fondo a la pagina */
+    background-image:url('/static/img/fondo_gris.png'); /*Dando la imagen de fondo a la pagina */
     background-size: cover;
     background-position: center;
 }
+
 
 /*Posicionando el login*/
 
 .form_container{
     position: absolute;
+    max-width: 320px;
+    width: 100%;
     top: 50%;
     left: 90%; /*Aqui coloco el texto o el container a la izquierda de acuerdo al porcentaje*/
     transform: translate(-50%,-50%);
     z-index: 101;
     color: rgb(0, 0, 0);
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    
+}
+
+.form_container h2{
+    font-size: 22px;
+    color: black;
+    text-align: center;
+}
+
+.input_box{
+    position:relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+}
+
+.input_box input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-bottom: 1.5px solid #aaaaaa;
+}
+
+.form_close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: black;
+    font-size: 22px;
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 
