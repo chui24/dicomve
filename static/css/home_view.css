@@ -103,6 +103,7 @@ a{
     width: 100%;
     border: none;
     border-bottom: 1.5px solid #aaaaaa;
+    outline: none;
 }
 
 .form_close{
