@@ -6,27 +6,37 @@
   <title>DicoMVE-login</title>
 
   <link rel="stylesheet" href="{{ url_for('static', filename='css/login_view.css') }}"> 
-
+  <!--Agregando fuentes de letras para que se vea mas bonito-->
+  <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">-->
+  
+  <!--Agregando cdn de iconos-->
+  <script src="https://kit.fontawesome.com/e388f8558d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="login-container">
-        <h1>Welcome to DicoMVE<h1>
-        <h2>Login</h2>
-        <form action="/login" method="POST">
-            <div class="form-group">
-                <label for="username">username:</label>
-                <input type="text" id="username" name="username" required>
+    
+<!-- Formulario de login -->
+<div class="form_container">
+    <i class="ui uil-times form_close"></i>
+    <!--Forma del Login-->
+    <div class="form login_form">
+        <form action="#">
+            <h2 class="abril-fatface-regular">Login</h2> <!-- Aplica la clase para la fuente -->
+
+            <div class="input_box">
+                <input type="email" placeholder="Enter your email">
+                <i class="fas fa-user icon"></i> <!-- Ícono de usuario -->
             </div>
-            <div class="form-group">
-                <label for="password">password:</label>
-                <input type="password" id="password" name="password" required>
+
+            <div class="input_box"> <!-- Abre un nuevo div de input_box -->
+                <input type="password" placeholder="Enter your password">
+                <i class="fas fa-key icon"></i> <!-- Ícono de llave -->
             </div>
-            <button type="submit">Login</button>
-            <button type="submit" href="{{url_for('register')}}">Sign in</button>
         </form>
-        <h4>Esta es una pagina dedicada a doctores</h4>
-        <h6>prueba</h6>
     </div>
+</div>
+
+
 </body>
 </html>
-  

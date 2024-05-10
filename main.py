@@ -18,3 +18,7 @@ def login():
 @app.route('/register')
 def register():
     return render_template('register_view.html') 
+
+@app.route('/user_view')
+def user():
+    return render_template('user_view.html')

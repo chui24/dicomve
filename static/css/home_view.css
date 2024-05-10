@@ -66,102 +66,21 @@ a{
     background-position: center;
 }
 
-
-/*Posicionando el login*/
-
-.form_container{
-    position: absolute;
-    max-width: 320px;
-    width: 100%;
-    top: 50%;
-    left: 90%; /*Aqui coloco el texto o el container a la izquierda de acuerdo al porcentaje*/
-    transform: translate(-50%,-50%);
-    z-index: 101;
-    color: rgb(0, 0, 0);
-    background: #fff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: rgba(0, 0, 0, 0.1);
-    
-}
-
-.form_container h2{
-    font-size: 22px;
-    color: black;
-    text-align: center;
-}
-
-.input_box{
-    position:relative;
-    margin-top: 30px;
-    width: 100%;
-    height: 40px;
-}
-
-.input_box input {
-    height: 100%;
-    width: 100%;
-    border: none;
-    border-bottom: 1.5px solid #aaaaaa;
-    outline: none;
-}
-
-.form_close{
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    color: black;
-    font-size: 22px;
-    opacity: 0.7;
-    cursor: pointer;
-}
-
-
-.nav_logo img {
-    width: 300px; /* Ajusta el ancho del logo */
-    height: auto; /* Para mantener la proporción */
-}
-
-.nav_logo{
-    float: left; /* Coloca el logo a la izquierda */
-    margin-right: 20px; /* Añade un espacio entre el logo y los enlaces */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Estilos para el contenedor en donde estara el mensaje de bienvenida y la descripcion */
-
-
 .content_container {
     position: absolute;
-    right: 60%;
+    right: 56%;
     top: 50%;
     transform: translateY(-50%);
-    color: black;
+    color: rgb(43, 44, 38);
     border: 2px solid #fff; /* Añade un borde blanco de 2px alrededor del contenedor */
     border-radius: 20px; /* Añade esquinas redondeadas al contenedor */
-    padding: 20px; /* Añade un espacio interno de 20px alrededor del contenido */
+    padding: 80px; /* Añade un espacio interno de 20px alrededor del contenido */
     background-color: rgba(22, 247, 235, 0.925); /* Agrega un fondo blanco transparente al contenedor */
     box-shadow: 0 4px 6px rgba(22, 6, 6, 0.1); /* Agrega una sombra suave al contenedor */
 }
 
-/* Estilos para el título "Bienvenido a DicoMVE" */
+/* Estilos para el título de Bienvenida */
 .welcome_title {
     text-align: center;
 }
@@ -180,4 +99,28 @@ a{
 .description p {
     font-size: 18px;
     line-height: 1.5;
+}
+
+/* Estilos para el logo de la navegación */
+.nav_logo img {
+    width: 300px; /* Ajusta el ancho del logo */
+    height: auto; /* Para mantener la proporción */
+}
+
+/* Estilos para el logo en la navegación */
+.nav_logo{
+    float: left; /* Coloca el logo a la izquierda */
+    margin-right: 20px; /* Añade un espacio entre el logo y los enlaces */
+}
+
+/* Estilos para la fuente TitanOne-Regular.ttf */
+@font-face {
+    font-family: 'Titan One';
+    src: url('/static/font/TitanOne-Regular.ttf') format('truetype');
+}
+
+.abril-fatface-regular {
+    font-family: 'Titan One', serif;
+    font-weight: 400;
+    font-style: normal;
 }
