@@ -67,13 +67,7 @@ body {
     cursor: pointer; /* Cursor apuntador */
 }
 
-.icon {
-    position: absolute; /* Posicionamiento absoluto para los íconos */
-    right: 10px; /* Alinea los íconos a la derecha */
-    top: 50%; /* Alinea los íconos verticalmente al centro */
-    transform: translateY(-50%); /* Ajusta la alineación vertical */
-    color: #888; /* Color del ícono (opcional) */
-}
+
 
 .input_box {
     position: relative; /* Ajusta el posicionamiento relativo */
@@ -88,10 +82,9 @@ body {
 
 .icon {
     position: absolute; /* Posicionamiento absoluto para los íconos */
-    right: 10px; /* Alinea los íconos a la derecha */
+    right: -60px; /* Alinea los íconos a la derecha (Encajandolos bien en los campos del input) */
     top: 50%; /* Alinea los íconos verticalmente al centro */
-    transform: translateY(-50%); /* Ajusta la alineación vertical */
-    color: #888; /* Color del ícono (opcional) */
+    color: #1b0202; /* Color del ícono (opcional) */
 }
 
 
@@ -108,7 +101,7 @@ body {
 }*/
 
 /* Estilos para la fuente AbrilFatface-Regular.ttf */
-/*@font-face {
+@font-face {
     font-family: 'Abril Fatface';
     src: url('/static/font/AbrilFatface-Regular.ttf') format('truetype');
 }
@@ -119,11 +112,11 @@ body {
     font-style: normal;
 }*/
 
-/* Estilos para la fuente TitanOne-Regular.ttf */
+/* Estilos para la fuente TitanOne-Regular.ttf 
 @font-face {
     font-family: 'Titan One';
     src: url('/static/font/TitanOne-Regular.ttf') format('truetype');
-}
+}*/
 
 .abril-fatface-regular {
     font-family: 'Titan One', serif;

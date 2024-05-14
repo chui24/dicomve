@@ -45,23 +45,23 @@ a{
 }
 
 .button{
-    padding: 2px 20px; /*Ajustando el ancho y largo de los botones de login y Sing In*/
-    border: 2px solid rgb(22, 211, 195); /*Ajustando el borde y color de los botones*/
-    background: transparent;
-    border-radius: 20px; /*Ajustando el radio de los botones si quiero que se vean mas redondos y no cuadrados*/
+    padding: 15px 40px; /* Ajustando el ancho y largo de los botones de login y Sign Up */
+    border: 2px solid rgb(37, 80, 76); /* Ajustando el borde y color de los botones */
+    background-color: rgb(22, 211, 195); /* Agrega un color de fondo a los botones */
+    border-radius: 20px; /* Ajustando el radio de los botones si quiero que se vean más redondos y no cuadrados */
     cursor: pointer;
+    font-size: 18px; /* Ajustando el tamaño de la fuente de los botones */
 }
 
 .button:active {
-    transform: scale(0.20) ; /*Dando estilo de parpadeo a los botones*/
-
+    transform: scale(0.95); /* Dando estilo de parpadeo a los botones */
 }
 
-/* Giving styles to Home*/
+/* Giving styles to Home */
 .home{
     position: relative;
     height: 100vh;
-    background-image:url('/static/img/fondo_gris.png'); /*Dando la imagen de fondo a la pagina */
+    background-image:url('/static/img/fondo_gris.png'); /* Dando la imagen de fondo a la pagina */
     background-size: cover;
     background-position: center;
 }
@@ -84,6 +84,33 @@ a{
 .welcome_title {
     text-align: center;
 }
+
+/* Estilos para el contenedor de los botones */
+.button_container {
+    position: absolute;
+    top: 50%; /* Alinea los botones verticalmente en el centro */
+    left: 250%; /* Alinea los botones a la derecha */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 100px; /* Espacio entre los botones */
+    
+    
+}
+
+
+/* Estilos para los botones de login y home en la vista del home*/
+.button_container {
+    position: absolute;
+    left: 175%; /* Alinea los botones a la derecha */
+    bottom: 10px; /* Ajusta la posición vertical de los botones */
+    margin-top: 10px; /* Margen superior */
+    width: 50%; /* Ancho completo */
+    height: 250px; /*Ajustando altura de los botones alineandolos con la altura del contenedor*/
+    padding: 0 20px; /* Añade un espacio interno a los lados */
+    
+}
+
 
 .welcome_title h1 {
     font-size: 36px;

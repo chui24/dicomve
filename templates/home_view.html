@@ -8,7 +8,7 @@
     <!--Boostrap instalado - no necesita internet  -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
 
-    <!-- Aqui le empiezo a juntar el etilo que se creo en css, pilas con la sintaxis del href-->
+    <!-- Aquí le empiezo a juntar el estilo que se creó en CSS, pilas con la sintaxis del href -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home_view.css') }}"> 
 </head>
 
@@ -18,20 +18,17 @@
   <header class="header">
     <nav class="nav">
       <!-- Logo -->
-      <a href="#" class="nav_logo">
+      <a href="/" class="nav_logo">
         <img src="{{ url_for('static', filename='img/logo.png') }}" alt="DicoMVE Logo">
       </a>
   
       <!-- Lista de enlaces -->
       <ul class="nav_items">
         <li class="nav_item">
-          <a href="#" class="nav_link">Home</a> 
+          <a href="/" class="nav_link">Home</a> 
           <a href="#" class="nav_link">About</a>
         </li>
       </ul> 
-      <!-- Botones de Login y Sing Up -->
-      <button class="button" onclick="window.location.href='/login'">Login</button>
-      <button class="button">Sing Up</button>
     </nav>
   </header>
 
@@ -41,15 +38,23 @@
     <div class="content_container">
       <!-- Título "Bienvenido a DicoMVE" -->
       <div class="welcome_title">
-        <h1 class = "abril-fatface-regular">Welcome Doctor</h1>
-        <p>This is a basic usessfull imaging services for medical tools</p>
+        <h1>Welcome Doctor</h1>
+        <p>This is a basic imaging services usefull for medical tools using Orhtanc server for get imaging studies, this project is  actually building by Chuimachado</p>
       </div>
 
       <!-- Sección de mensaje o descripción -->
       <section class="description">
         <!--<p>Your personal imaging studies wallet!.</p> -->
       </section>
+
+      <!-- Botones de Login y Sing Up -->
+      <div class="button_container">
+        <button class="button" onclick="window.location.href='/login'">Login</button>
+        <button class="button" onclick="window.location.href='/register'">Sign Up</button>
+      </div>
     </div>
   </section>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
 </body>
 </html>
