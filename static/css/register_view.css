@@ -1,0 +1,87 @@
+/* Estilos para el formulario de registro */
+body {
+    position: relative;
+    height: 100vh;
+    background-image: url('/static/img/fondo_gris.png'); /* Establece el fondo de toda la página */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Contenedor del formulario */
+.form_container{
+    position: absolute; /* Posicionamiento absoluto para centrar el formulario */
+    max-width: 200px; /* Ancho máximo del formulario */
+    width: 100%; /* Ancho completo del contenedor */
+    top: 50%; /* Posicionamiento vertical en la mitad superior */
+    left: 50%; /* Posicionamiento lateral al centro */
+    transform: translate(-50%,-50%); /* Centra vertical y horizontalmente */
+    z-index: 101; /* Índice z para estar sobre otros elementos */
+    color: rgb(0, 0, 0); /* Color de texto */
+    background-color: rgba(22, 247, 235, 0.925); /* Fondo blanco */
+    padding: 190px; /* Espaciado interno */
+    border-radius: 80px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(22, 6, 6, 0.1); /* Agrega una sombra suave al contenedor */
+}
+
+/* Título del formulario */
+.form_container h2 {
+    font-size: 40px; /* Tamaño de fuente */
+    color: black; /* Color de texto */
+    text-align: center; /* Alineación centrada */
+}
+
+/* Contenedor de cada campo de entrada */
+.input_box {
+    right: 25%; /*Acomoda los campos a la izquierda*/
+    position: relative; /* Posicionamiento relativo para los elementos internos */
+    margin-top: 30px; /* Margen superior */
+    width: 100%; /* Ancho completo */
+    height: 60px; /* Ajusta la altura del contenedor */
+    text-align: left; /* Alinea los campos a la izquierda */
+}
+
+/* Estilos para los campos de entrada */
+.input_box input {
+    height: 100%; /* Ajusta la altura del campo de entrada */
+    width: 120%; /* Ancho menos el espacio interno a los lados */
+    border: none; /* Sin borde */
+    border-bottom: 2px solid #aaaaaa; /* Borde inferior */
+    outline: none; /* Sin contorno al enfocar */
+    border-radius: 30px; /* Hace los bordes más redondeados */
+    padding: 0 20px; /* Añade un espacio interno a los lados */
+    font-size: 15px; /* Ajusta el tamaño de la fuente */
+    margin-top: 10px; /* Ajusta el margen superior */
+}
+
+
+/*Estilos para los inconos dentro de los campos del formulario*/
+.icon {
+    position: absolute; /* Posicionamiento absoluto para los íconos */
+    right: -60px; /* Alinea los íconos a la derecha (Encajandolos bien en los campos del input) */
+    top: 50%; /* Alinea los íconos verticalmente al centro */
+    color: #aaaaaa; /* Color de los iconos */
+}
+
+/* Estilos para el botón de registro del formulario */
+.button {
+    width: 100%; /* Ancho completo */
+    padding: 15px; /* Ajusta el espaciado interno */
+    background-color: #16dbca; /* Color de fondo */
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    color: #ffffff; /* Color de texto */
+    cursor: pointer; /* Cursor apuntador */
+    margin-top: 20px; /* Margen superior */
+}
+
+/* Estilos para el botón de cierre del formulario */
+.form_close {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 10px; /* Distancia desde arriba */
+    right: 20px; /* Distancia desde la derecha */
+    color: black; /* Color de texto */
+    font-size: 22px; /* Tamaño de fuente */
+    opacity: 0.7; /* Opacidad */
+    cursor: pointer; /* Cursor apuntador */
+}

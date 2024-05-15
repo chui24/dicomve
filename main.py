@@ -4,7 +4,7 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
-# This is de main view rute 
+# This is the main view rute 
 @app.route('/')
 def home():
     return render_template('home_view.html')
@@ -19,6 +19,12 @@ def login():
 def register():
     return render_template('register_view.html') 
 
-@app.route('/user_view')
+# user view template after get login
+@app.route('/user')
 def user():
     return render_template('user_view.html')
+
+# about page for more information of DiconMVE
+@app.route('/about')
+def about():
+    return render_template('about_view.html')

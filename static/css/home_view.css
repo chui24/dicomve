@@ -41,13 +41,14 @@ a{
 }
 
 .nav_link:hover{
-    color: rgb(16, 219, 202); /*Aquí le doy el estilo de cambiar de color al momento de colocar el cursor encima de un link*/
+    color: rgb(58, 136, 129); /*Aquí le doy el estilo de cambiar de color al momento de colocar el cursor encima de un link*/
 }
 
 .button{
-    padding: 15px 40px; /* Ajustando el ancho y largo de los botones de login y Sign Up */
-    border: 2px solid rgb(37, 80, 76); /* Ajustando el borde y color de los botones */
-    background-color: rgb(22, 211, 195); /* Agrega un color de fondo a los botones */
+    padding: 30px 40px; /* Ajustando el ancho y largo de los botones de login y Sign Up */
+    border: 2px solid rgb(139, 155, 153); /* Ajustando el borde y color de los botones */
+    background-color: rgba(23, 223, 213, 0.925); /* Agrega un color de fondo a los botones */
+    box-shadow: 0 4px 6px rgba(22, 6, 6, 0.1);
     border-radius: 20px; /* Ajustando el radio de los botones si quiero que se vean más redondos y no cuadrados */
     cursor: pointer;
     font-size: 18px; /* Ajustando el tamaño de la fuente de los botones */
@@ -69,15 +70,22 @@ a{
 /* Estilos para el contenedor en donde estara el mensaje de bienvenida y la descripcion */
 .content_container {
     position: absolute;
-    right: 56%;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 31%; /* Ajusta la posición del contenedor más al centro */
+    top: 53%; /* Centra verticalmente el contenedor */
+    transform: translate(-50%, -50%); /* Centra el contenedor horizontal y verticalmente */
     color: rgb(43, 44, 38);
     border: 2px solid #fff; /* Añade un borde blanco de 2px alrededor del contenedor */
     border-radius: 20px; /* Añade esquinas redondeadas al contenedor */
-    padding: 80px; /* Añade un espacio interno de 20px alrededor del contenido */
+    padding: 40px; /* Añade un espacio interno alrededor del contenido */
     background-color: rgba(22, 247, 235, 0.925); /* Agrega un fondo blanco transparente al contenedor */
     box-shadow: 0 4px 6px rgba(22, 6, 6, 0.1); /* Agrega una sombra suave al contenedor */
+    width: 650px; /* Ajusta el ancho del contenedor */
+    height: 560px; /*Ajustando el alto del contenedor*/
+    display: flex; /* Añade flexbox para centrar el contenido */
+    flex-direction: column; /* Organiza los hijos en columna */
+    align-items: center; /* Centra horizontalmente el contenido */
+    justify-content: center; /* Centra verticalmente el contenido */
+    
 }
 
 /* Estilos para el título de Bienvenida */
@@ -88,27 +96,32 @@ a{
 /* Estilos para el contenedor de los botones */
 .button_container {
     position: absolute;
-    top: 50%; /* Alinea los botones verticalmente en el centro */
-    left: 250%; /* Alinea los botones a la derecha */
+    top: 50%; /* Centra verticalmente el contenedor de botones */
+    right: 10%; /* Ajusta la posición del contenedor de botones a la derecha */
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    gap: 100px; /* Espacio entre los botones */
-    
-    
+    gap: 80px; /* Espacio entre los botones */
 }
+
 
 
 /* Estilos para los botones de login y home en la vista del home*/
 .button_container {
     position: absolute;
-    left: 175%; /* Alinea los botones a la derecha */
+    left: 141%; /* Alinea los botones a la derecha */
     bottom: 10px; /* Ajusta la posición vertical de los botones */
     margin-top: 10px; /* Margen superior */
-    width: 50%; /* Ancho completo */
+    width: 77%; /* Ajustando el ancho de los botones de login y sign Up */
     height: 250px; /*Ajustando altura de los botones alineandolos con la altura del contenedor*/
-    padding: 0 20px; /* Añade un espacio interno a los lados */
+    padding: 0 60px; /* Añade un espacio interno a los lados, permite ajustar el ancho sin desalinear los botones como estan encajados. */
     
+    
+    
+}
+
+.button:active {
+    transform: scale(0.95); /* Dando estilo de parpadeo a los botones */
 }
 
 

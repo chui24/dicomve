@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sing Up on DicoMVE</title>
+    <title>Sign Up to DicoMVE</title>
+
+    <!-- Enlace al archivo CSS de estilos comunes -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/common_styles.css') }}"> 
+
+    <!-- Enlace al archivo CSS específico de esta vista -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/register_view.css') }}"> 
+    
+    <!--Agregando los iconos con cdn-->
+    <script src="https://kit.fontawesome.com/e388f8558d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Register view in progress...</h1>
+
+<!-- Formulario de registro -->
+<div class="form_container">
+    <i class="ui uil-times form_close"></i>
+    <!-- Formulario de Registro -->
+    <div class="form register_form">
+        <form action="#" method="POST">
+            <h2>Register</h2>
+
+
+           <!-- Campo para el nombre de  usuario -->
+            <div class="input_box">
+                <input type="text" name="username" placeholder="Enter your username">
+                <i class="fa-solid fa-user icon"></i> <!-- Ícono de usuario -->
+            </div>
+
+            <!-- Campo para el correo electrónico -->
+            <div class="input_box">
+                <input type="email" name="email" placeholder="Enter your email">
+                <i class="fas fa-envelope icon"></i> <!-- Ícono de correo -->
+            </div>
+
+            <!-- Campo para la  contraseña -->
+            <div class="input_box">
+                <input type="password" name="password" placeholder="Enter your password">
+                <i class="fas fa-lock icon"></i> <!-- Ícono de candado -->
+            </div>
+
+            <!-- Campo para la  confirmación de contraseña -->
+            <div class="input_box">
+                <input type="password" name="confirm_password" placeholder="Confirm your password">
+                <i class="fas fa-lock icon"></i> <!-- Ícono de candado -->
+            </div>
+
+            <!-- Botón de Registro -->
+            <button type="submit" class="button">Register</button>
+        </form>
+    </div>
+</div>
+
 </body>
 </html>
