@@ -20,6 +20,7 @@ body {
     background-color: rgba(22, 247, 235, 0.925); /* Fondo blanco */
     padding: 190px; /* Espaciado interno */
     border-radius: 80px; /* Bordes redondeados */
+    border: 2px solid #fff; /* Añade un borde blanco de 2px alrededor del contenedor */
     box-shadow: 0 4px 6px rgba(22, 6, 6, 0.1); /* Agrega una sombra suave al contenedor */
 }
 
@@ -84,4 +85,32 @@ body {
     font-size: 22px; /* Tamaño de fuente */
     opacity: 0.7; /* Opacidad */
     cursor: pointer; /* Cursor apuntador */
+}
+
+/* Estilos para la fuente TitanOne-Regular.ttf */
+@font-face {
+    font-family: 'Titan One';
+    src: url('/static/font/TitanOne-Regular.ttf') format('truetype');
+}
+
+.abril-fatface-regular {
+    font-family: 'Titan One', serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/* Icono de flecha para volver al home */
+.back_to_home {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+}
+
+.back_to_home i {
+    color: #000;
 }
