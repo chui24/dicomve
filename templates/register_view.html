@@ -16,36 +16,40 @@
 </head>
 <body>
 
+<!-- Icono de flecha para volver al home -->
+<a href="{{ url_for('home') }}" class="back_to_home">
+    <i class="fa-solid fa-arrow-left"></i>
+</a>
+
 <!-- Formulario de registro -->
 <div class="form_container">
     <i class="ui uil-times form_close"></i>
     <!-- Formulario de Registro -->
     <div class="form register_form">
         <form action="#" method="POST">
-            <h2>Register</h2>
+            <h2 class="TitanOne-Regular">Register</h2>
 
-
-           <!-- Campo para el nombre de  usuario -->
+           <!-- Campo para el nombre de usuario -->
             <div class="input_box">
-                <input type="text" name="username" placeholder="Enter your username">
+                <input type="text" name="username" placeholder="Enter your username" required>
                 <i class="fa-solid fa-user icon"></i> <!-- Ícono de usuario -->
             </div>
 
             <!-- Campo para el correo electrónico -->
             <div class="input_box">
-                <input type="email" name="email" placeholder="Enter your email">
+                <input type="email" name="email" placeholder="Enter your email" required>
                 <i class="fas fa-envelope icon"></i> <!-- Ícono de correo -->
             </div>
 
-            <!-- Campo para la  contraseña -->
+            <!-- Campo para la contraseña -->
             <div class="input_box">
-                <input type="password" name="password" placeholder="Enter your password">
+                <input type="password" name="password" placeholder="Enter your password" required>
                 <i class="fas fa-lock icon"></i> <!-- Ícono de candado -->
             </div>
 
-            <!-- Campo para la  confirmación de contraseña -->
+            <!-- Campo para la confirmación de contraseña -->
             <div class="input_box">
-                <input type="password" name="confirm_password" placeholder="Confirm your password">
+                <input type="password" name="confirm_password" placeholder="Confirm your password" required>
                 <i class="fas fa-lock icon"></i> <!-- Ícono de candado -->
             </div>
 

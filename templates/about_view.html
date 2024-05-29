@@ -4,10 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DicoMVE project information</title>
+    <!-- Enlace al archivo CSS de estilos comunes -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/common_styles.css') }}">
+    <!-- Enlace al archivo CSS específico de esta vista -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about_view.css') }}">
+    <!--Agregando los iconos con cdn-->
+    <script src="https://kit.fontawesome.com/e388f8558d.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<!-- Icono de flecha para volver al home -->
+<a href="{{ url_for('home') }}" class="back_to_home">
+    <i class="fa-solid fa-arrow-left"></i>
+</a>
 
-    <h1>Welcome to about DicoMVE</h1>
-    
+<!-- Container principal -->
+<div class="container">
+    <!-- Título -->
+    <h1>Project Info</h1>
+    <!-- Información -->
+    <div class="information">
+        <p>DicoMVE es un proyecto de código abierto que busca brindar una forma optimizada de visualizar estudios de imaginología médica a los doctores. Este proyecto utiliza una herramienta importante: el servidor Orthanc, que también es de código abierto. Esto nos permite cargar pacientes y ver sus estudios con los visores integrados en el servicio.</p>
+        <p>¡Únete a nosotros en esta emocionante aventura para revolucionar la forma en que los médicos interactúan con las imágenes médicas!</p>
+    </div>
+</div>
+
 </body>
 </html>
