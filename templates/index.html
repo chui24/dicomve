@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DicoMVE</title>
+
+    <!--Boostrap instalado - no necesita internet  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+    <!-- Aquí le empiezo a juntar el estilo que se creó en CSS, pilas con la sintaxis del href -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}"> 
+</head>
+
+<body>
+
+  <!-- header -->
+  <header class="header">
+    <nav class="nav">
+      <!-- Logo -->
+      <a href="/" class="nav_logo">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="DicoMVE Logo">
+      </a>
+  
+      <!-- Lista de enlaces -->
+      <ul class="nav_items">
+        <li class="nav_item">
+          <a href="/" class="nav_link">Home</a> 
+          <a href="/about" class="nav_link">About</a>
+        </li>
+      </ul> 
+    </nav>
+  </header>
+
+  <!--Home-->
+  <section class="home">
+    <!-- Contenedor para el título y la descripción -->
+    <div class="content_container">
+      <!-- Título "Bienvenido a DicoMVE" -->
+      <div class="welcome_title">
+        <h2>¡Bienvenido a DicomVE!</h2>
+        <p></p>
+      </div>
+
+      <!-- Sección de mensaje o descripción -->
+      <section class="description">
+        <p>Tu portafolio personal para poder visualizar imagenes medicas de una manera mas sencilla!</p> 
+      </section>
+
+      <!-- Botones de Login y Sing Up -->
+      <div class="button_container">
+        <button class="button" onclick="window.location.href='/login'">Ingresa ya!</button>
+        <button class="button" onclick="window.location.href='/register'">Registrate</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
