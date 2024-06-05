@@ -34,23 +34,24 @@ body {
     border: 2px solid #fff; /* Añade un borde blanco de 2px alrededor del contenedor */
     border-radius: 20px; /* Añade esquinas redondeadas al contenedor */
     padding: 40px; /* Añade un espacio interno alrededor del contenido */
-    background-color: rgba(22, 247, 235, 0.925); /* Agrega un fondo blanco transparente al contenedor */
+    background-color: rgba(11, 197, 188, 0.925); /* Agrega un fondo blanco transparente al contenedor */
     box-shadow: 0 4px 6px rgba(22, 6, 6, 0.1); /* Agrega una sombra suave al contenedor */
-    width: 750px; /* Ajusta el ancho del contenedor */
-    height: 460px; /*Ajustando el alto del contenedor*/
+    width: 780px; /* Ajusta el ancho del contenedor */
+    height: 640px; /*Ajustando el alto del contenedor*/
 }
 
 h1 {
     text-align: center;
     font-family: 'Abril Fatface', serif;
     font-size: 36px;
-    color: black;
+    color: rgb(255, 255, 255); /* Color de texto */
+    font-size: 44px;
 }
 
 .information {
-    font-size: 18px;
+    font-size: 32px;
     line-height: 1.6;
-    color: black;
+    color: rgb(255, 255, 255); /* Color de texto */
     font-family: 'Abril Fatface', serif;
 }
 

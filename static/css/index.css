@@ -45,12 +45,13 @@ a{
 }
 
 .button{
-    padding: 30px 40px; /* Ajustando el ancho y largo de los botones de login y Sign Up */
-    border: 2px solid rgb(139, 155, 153); /* Ajustando el borde y color de los botones */
-    background-color: rgba(23, 223, 213, 0.925); /* Agrega un color de fondo a los botones */
-    box-shadow: 0 4px 6px rgba(22, 6, 6, 0.1);
+    padding: 30px 20px; /* Ajustando el ancho y largo de los botones de login y Sign Up */
+    border: 2px solid rgb(219, 248, 245); /* Ajustando el borde y color de los botones */
+    background-color: rgba(11, 197, 188, 0.925); /* Agrega un color de fondo a los botones */
+    box-shadow: 0 4px 6px rgba(139, 136, 136, 0.822); /*Ajustando el color de la sombra de los botones */
     border-radius: 20px; /* Ajustando el radio de los botones si quiero que se vean más redondos y no cuadrados */
     cursor: pointer;
+    color: rgb(255, 255, 255); /*Ajusta el color de las letras del mensaje*/
     font-size: 18px; /* Ajustando el tamaño de la fuente de los botones */
 }
 
@@ -73,11 +74,11 @@ a{
     left: 31%; /* Ajusta la posición del contenedor más al centro */
     top: 53%; /* Centra verticalmente el contenedor */
     transform: translate(-50%, -50%); /* Centra el contenedor horizontal y verticalmente */
-    color: rgb(43, 44, 38);
+    color: rgb(255, 255, 255); /*Ajusta el color de las letras del mensaje*/
     border: 2px solid #fff; /* Añade un borde blanco de 2px alrededor del contenedor */
     border-radius: 20px; /* Añade esquinas redondeadas al contenedor */
     padding: 40px; /* Añade un espacio interno alrededor del contenido */
-    background-color: rgba(22, 247, 235, 0.925); /* Agrega un fondo blanco transparente al contenedor */
+    background-color: rgba(11, 197, 188, 0.925); /* Agrega un fondo blanco transparente al contenedor */
     box-shadow: 0 4px 6px rgba(22, 6, 6, 0.1); /* Agrega una sombra suave al contenedor */
     width: 650px; /* Ajusta el ancho del contenedor */
     height: 560px; /*Ajustando el alto del contenedor*/
@@ -137,7 +138,7 @@ a{
 }
 
 .description p {
-    font-size: 18px;
+    font-size: 36px;
     line-height: 1.5;
 }
 

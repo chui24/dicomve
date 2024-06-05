@@ -17,17 +17,17 @@ body {
     transform: translate(-50%,-50%); /* Centra vertical y horizontalmente */
     z-index: 101; /* Índice z para estar sobre otros elementos */
     color: rgb(0, 0, 0); /* Color de texto */
-    background-color: rgba(22, 247, 235, 0.925); /* Agrega un fondo blanco transparente al contenedor */
+    background-color: rgba(11, 197, 188, 0.925); /* Agrega un fondo blanco transparente al contenedor */
     padding: 190px; /* Espaciado interno */
     border-radius: 80px; /* Bordes redondeados */
     border: 2px solid #fff; /* Añade un borde blanco de 2px alrededor del contenedor */
-    box-shadow: 0 4px 6px rgba(22, 6, 6, 0.1); /* Agrega una sombra suave al contenedor */
+    box-shadow:  0 4px 6px rgba(139, 136, 136, 0.822); /* Agrega una sombra suave al contenedor */
 }
 
 /* Título del formulario */
 .form_container h2{
-    font-size: 30px; /* Tamaño de fuente */
-    color: black; /* Color de texto */
+    font-size: 50px; /* Tamaño de fuente */
+    color: rgb(255, 255, 255); /* Color de texto */
     text-align: center; /* Alineación centrada */
 }
 

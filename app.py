@@ -1,16 +1,20 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 # defining the app main for this project
 app = Flask(__name__)
+port = 5000
 
+#Configuracion para el modo debug al momento de iniciar el servidor
+if __name__ == 'main':
+    app.run(host='0.0.0.0', debug = True, port=port)
 
 # This is the main view rute 
 @app.route('/')
 def home():
-    return render_template('home_view.html')
+    return render_template('index.html')
 
 # Login view
-@app.route('/login')
+@app.route('/login', methods=['POST', 'GET'])
 def login():
     return render_template('login_view.html')
 
