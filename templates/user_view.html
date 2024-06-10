@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Doctor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/user_view.css') }}">
 </head>
 <body>
-    
+    <div class="header">
+        <h1>Bienvenido, Doctor</h1>
+    </div>
+
+    <div class="content">
+        <div class="content_container">
+            <div class="welcome_title">
+                <h1>Bienvenido, Doctor</h1>
+            </div>
+            <div class="button_container">
+                <button class="button" onclick="window.location.href='http://localhost/orthanc/ui/app/token-landing.html?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwicmVzb3VyY2VzIjpbeyJkaWNvbV91aWQiOiIxLjIuMjc2LjAuNzIzMDAxMC4zLjEuMi4xNjgwODgxOTc0LjEuMTcxNzUzNjA3MC45MDMyOTEiLCJvcnRoYW5jX2lkIjoiMWI1MDFhYWUtM2U1YjU3YzgtZjU5MzlmNmEtYmY1MjM1MWQtMWViY2I3N2QiLCJ1cmwiOm51bGwsImxldmVsIjoic3R1ZHkifV0sInR5cGUiOiJzdG9uZS12aWV3ZXItcHVibGljYXRpb24iLCJleHBpcmF0aW9uX2RhdGUiOiIyMDI2LTAxLTMxVDE2OjU3OjA4LjYxNjI3NCswMDowMCIsInZhbGlkaXR5X2R1cmF0aW9uIjo1MTg0MDAwMH0.lUxSs92wDaQas7x8J1HcwWwQLj91_RUaUlj6ex51LNs'">Ver estudios</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
