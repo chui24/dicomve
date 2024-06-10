@@ -53,3 +53,17 @@ class UserConnection:
             finally:
                 print("eeeee")
                 session.close()
+
+
+# Funcion que permite leer un solo usuario para gestionar su inicio de sesion
+    def read_one_user(self, username):
+        session = self.SessionLocal()
+        try:
+            result = session.query(User).filter(User.username == username).first()
+            if result != None:
+                print("result from userConnection: ", result)
+                return result
+            elif result == None:
+                return False    
+        finally:
+            session.close()
