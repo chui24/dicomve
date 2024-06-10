@@ -5,8 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Doctor</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/user_view.css') }}">
+
+  <!--Agregando cdn de iconos-->
+  <script src="https://kit.fontawesome.com/e388f8558d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
+    <!-- Icono de flecha para volver al home -->
+<a href="{{ url_for('home') }}" class="back_to_home">
+    <i class="fa-solid fa-arrow-left"></i>
+</a>
+
     <div class="header">
         <h1>Bienvenido, Doctor</h1>
     </div>
