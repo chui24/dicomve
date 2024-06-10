@@ -45,10 +45,28 @@ def load_user(id):
 def home():
     return render_template('index.html')
 
-# Login view
+# Aplicando la logica del login
 @app.route('/login', methods=['POST', 'GET'])
 def login():
+    if request.method == 'POST':
+        username = request.form.get('username_or_email')
+        password = request.form.get('password')
+        
+        connection = UserConnection(db)
+        user_data = connection.read_one_user(username)
+        print("USER: ", username, "pass: ",password)
+        print(user_data.password)
+
+        if user_data.password != password:
+            print("Son diferentes")
+        
+        else:
+            print("Son iguales")
+            return redirect('/user')
+        
+
     return render_template('login_view.html')
+
 
 # Register view
 @app.route('/register', methods=['POST', 'GET'])
