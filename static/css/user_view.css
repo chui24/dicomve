@@ -1,0 +1,127 @@
+/* user_view.css */
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/static/img/fondo_gris.png');
+    background-size: cover;
+    background-position: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Estilos para el header */
+.header {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+    padding: 0 20px;
+    background-color: rgba(11, 197, 188, 0.925);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin: 0;
+    line-height: 80px;
+}
+
+/* Contenedor de botones de navegación */
+.nav-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-buttons button {
+    padding: 15px 30px;
+    border: 2px solid rgb(219, 248, 245);
+    background-color: rgba(11, 197, 188, 0.925);
+    box-shadow: 0 4px 6px rgba(139, 136, 136, 0.822);
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin: 5px;
+}
+
+.nav-buttons button:active {
+    transform: scale(0.95);
+}
+
+/* Estilos para el contenedor de contenido principal */
+.content {
+    padding: 20px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Ajusta la altura para ocupar toda la pantalla menos el header */
+}
+
+/* Estilos específicos del contenedor de contenido */
+.content_container {
+    position: relative;
+    color: rgb(255, 255, 255);
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 40px;
+    background-color: rgba(11, 197, 188, 0.925);
+    box-shadow: 0 4px 6px rgba(22, 6, 6, 0.1);
+    width: 50%; /* Ajusta el ancho del contenedor */
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para el título de bienvenida */
+.welcome_title h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilos para el contenedor de los botones */
+.button_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los botones */
+}
+
+/* Estilos para los botones en el contenedor */
+.button_container .button {
+    padding: 15px 30px;
+    border: 2px solid rgb(219, 248, 245);
+    background-color: rgba(11, 197, 188, 0.925);
+    box-shadow: 0 4px 6px rgba(139, 136, 136, 0.822);
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-align: center;
+    margin: 5px;
+}
+
+.button_container .button:active {
+    transform: scale(0.95);
+}
+
+/* Estilos para la fuente TitanOne-Regular.ttf */
+@font-face {
+    font-family: 'Titan One';
+    src: url('/static/font/TitanOne-Regular.ttf') format('truetype');
+}
+
+.TitanOne-Regular {
+    font-family: 'Titan One', Arial, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
